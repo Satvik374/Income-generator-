@@ -1,0 +1,36 @@
+{
+  "name": "income-generator-hub",
+  "version": "1.0.0",
+  "description": "A comprehensive web application for generating real income through multiple revenue streams",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/",
+    "dev": "live-server --port=3000 --open=/ --watch=.",
+    "build": "echo 'Build process - minify CSS/JS for production'",
+    "test": "echo 'No tests specified yet'",
+    "deploy": "echo 'Deploy to your hosting provider'"
+  },
+  "keywords": [
+    "income-generation",
+    "affiliate-marketing",
+    "passive-income",
+    "web-monetization",
+    "adsense",
+    "stripe",
+    "email-marketing"
+  ],
+  "author": "Income Generator Hub",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/income-generator-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/income-generator-hub/issues"
+  },
+  "homepage": "https://github.com/yourusername/income-generator-hub#readme"
+}

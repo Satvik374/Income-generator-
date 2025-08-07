@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: income-generator-hub
+    env: static
+    buildCommand: |
+      echo "Building Income Generator Hub..."
+      echo "Static site - no build required"
+      echo "All files ready for deployment"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GA_MEASUREMENT_ID
+        value: GA_MEASUREMENT_ID
+      - key: ADSENSE_PUBLISHER_ID
+        value: ca-pub-XXXXXXXXXX
+      - key: STRIPE_PUBLISHABLE_KEY
+        value: pk_test_XXXXXXXXXXXXXXXXXXXXXXXX
+      - key: SITE_URL
+        value: https://your-site-name.onrender.com 

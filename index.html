@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Generator Hub - Your Path to Online Revenue</title>
+    <meta name="description" content="Discover proven strategies to generate real income online. Expert guides, tools, and resources for affiliate marketing, digital products, and passive income streams.">
+    <meta name="keywords" content="online income, passive income, affiliate marketing, digital products, make money online">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+    
+    <!-- Auto Ads (Alternative Option) -->
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-XXXXXXXXXX",
+            enable_page_level_ads: true
+        });
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1><i class="fas fa-chart-line"></i> Income Generator Hub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#premium">Premium</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Generate Real Income Online</h1>
+            <p>Discover proven strategies and tools to create multiple income streams from the comfort of your home.</p>
+            <div class="hero-buttons">
+                <a href="#guides" class="btn btn-primary">Start Learning</a>
+                <a href="#premium" class="btn btn-secondary">Go Premium</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-money-bill-wave"></i>
+        </div>
+    </section>
+
+    <!-- Income Stats Dashboard -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>Real Income Generation Methods</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>$2,000+</h3>
+                    <p>Average Monthly Affiliate Earnings</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>10,000+</h3>
+                    <p>Email Subscribers</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>85%</h3>
+                    <p>Success Rate</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>30 Days</h3>
+                    <p>Average Time to First Income</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google AdSense Banner Ad (Header) -->
+    <div class="ad-container header-ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Income Methods Section -->
+    <section id="guides" class="methods-section">
+        <div class="container">
+            <h2>Proven Income Generation Methods</h2>
+            <div class="methods-grid">
+                <div class="method-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Affiliate Marketing</h3>
+                    <p>Earn commissions by promoting products you love. Start with Amazon Associates and expand to high-paying programs.</p>
+                    <a href="https://affiliate-program.amazon.com/" target="_blank" class="affiliate-link" data-product="amazon-associates">Join Amazon Associates</a>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Digital Products</h3>
+                    <p>Create and sell courses, ebooks, templates, and software. Scale your expertise into passive income.</p>
+                    <a href="#premium" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Marketing</h3>
+                    <p>Build an email list and monetize through newsletters, product promotions, and automated sequences.</p>
+                    <a href="https://mailchimp.com/" target="_blank" class="affiliate-link" data-product="mailchimp">Start with Mailchimp</a>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-ad"></i>
+                    <h3>Display Advertising</h3>
+                    <p>Monetize your traffic with Google AdSense, Media.net, and other ad networks.</p>
+                    <a href="https://www.google.com/adsense/" target="_blank" class="affiliate-link" data-product="adsense">Apply to AdSense</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google AdSense Square Ad (Mid-content) -->
+    <div class="ad-container mid-content-ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="2345678901"
+             data-ad-format="rectangle"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Email Capture Section -->
+    <section class="email-capture">
+        <div class="container">
+            <h2>Get the Free Income Generation Starter Kit</h2>
+            <p>Download our comprehensive guide with templates, checklists, and proven strategies to start earning online today.</p>
+            <form id="email-form" class="email-form">
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Get Free Guide</button>
+            </form>
+            <p class="privacy-note">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Premium Content Section -->
+    <section id="premium" class="premium-section">
+        <div class="container">
+            <h2>Premium Income Mastery Course</h2>
+            <p>Unlock advanced strategies, exclusive tools, and 1-on-1 support to accelerate your income generation.</p>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$29<span>/month</span></div>
+                    <ul>
+                        <li>Basic income strategies</li>
+                        <li>Email support</li>
+                        <li>Monthly webinars</li>
+                        <li>Resource library</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="subscribe('starter')">Get Started</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <div class="price">$79<span>/month</span></div>
+                    <ul>
+                        <li>Advanced income strategies</li>
+                        <li>Priority support</li>
+                        <li>Weekly group calls</li>
+                        <li>Exclusive tools & templates</li>
+                        <li>Affiliate program access</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="subscribe('pro')">Go Pro</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Elite</h3>
+                    <div class="price">$199<span>/month</span></div>
+                    <ul>
+                        <li>1-on-1 coaching calls</li>
+                        <li>Custom strategy development</li>
+                        <li>Direct access to me</li>
+                        <li>Revenue sharing opportunities</li>
+                        <li>White-label products</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="subscribe('elite')">Join Elite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2>Free Income Calculation Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Affiliate Income Calculator</h3>
+                    <div class="calculator">
+                        <input type="number" id="visitors" placeholder="Monthly visitors">
+                        <input type="number" id="conversion" placeholder="Conversion rate (%)">
+                        <input type="number" id="commission" placeholder="Average commission ($)">
+                        <button onclick="calculateIncome()" class="btn btn-outline">Calculate</button>
+                        <div id="income-result" class="result"></div>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>Recommended Tools & Services</h3>
+                    <div class="recommendations">
+                        <a href="https://www.bluehost.com/" target="_blank" class="affiliate-link" data-product="bluehost">
+                            <i class="fas fa-server"></i> Bluehost Hosting - Start your website
+                        </a>
+                        <a href="https://www.canva.com/" target="_blank" class="affiliate-link" data-product="canva">
+                            <i class="fas fa-paint-brush"></i> Canva Pro - Create stunning visuals
+                        </a>
+                        <a href="https://clickfunnels.com/" target="_blank" class="affiliate-link" data-product="clickfunnels">
+                            <i class="fas fa-funnel-dollar"></i> ClickFunnels - Build sales funnels
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"I went from $0 to $3,000/month in affiliate commissions using the strategies taught here!"</p>
+                    <cite>- Sarah M., Digital Marketer</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The premium course paid for itself in the first month. Now I'm earning consistent passive income."</p>
+                    <cite>- Mike R., Online Entrepreneur</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Finally, a resource that shows real, actionable strategies instead of just theory."</p>
+                    <cite>- Jennifer L., Content Creator</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google AdSense Footer Ad -->
+    <div class="ad-container footer-ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="3456789012"
+             data-ad-format="leaderboard"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Income Generator Hub</h3>
+                    <p>Your trusted source for proven online income strategies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#guides">Income Guides</a></li>
+                        <li><a href="#tools">Free Tools</a></li>
+                        <li><a href="#premium">Premium Course</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Income Generator Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="ads-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
