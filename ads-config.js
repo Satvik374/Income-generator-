@@ -4,12 +4,12 @@
 const AdConfig = {
     // Google AdSense Configuration
     adsense: {
-        publisherId: 'ca-pub-XXXXXXXXXX', // Replace with your AdSense publisher ID
+        publisherId: 'ca-pub-9578468690172928', // Your AdSense publisher ID
         adSlots: {
-            header: '1234567890',     // Replace with your header ad slot ID
-            midContent: '2345678901', // Replace with your mid-content ad slot ID
-            footer: '3456789012',     // Replace with your footer ad slot ID
-            sidebar: '4567890123'     // Replace with your sidebar ad slot ID
+            header: '3538438029',     // Your INCOME ad slot ID
+            midContent: '3538438029', // Your INCOME ad slot ID
+            footer: '3538438029',     // Your INCOME ad slot ID
+            sidebar: '3538438029'     // Your INCOME ad slot ID
         },
         autoAds: true // Enable auto ads for automatic optimization
     },

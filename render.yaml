@@ -17,7 +17,7 @@ services:
       - key: GA_MEASUREMENT_ID
         value: GA_MEASUREMENT_ID
       - key: ADSENSE_PUBLISHER_ID
-        value: ca-pub-XXXXXXXXXX
+        value: ca-pub-9578468690172928
       - key: STRIPE_PUBLISHABLE_KEY
         value: pk_test_XXXXXXXXXXXXXXXXXXXXXXXX
       - key: SITE_URL
