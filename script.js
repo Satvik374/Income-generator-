@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initThemeToggle();
     initializeApp();
     setupEventListeners();
+    initBackToTop();
     trackPageView();
 });
 
@@ -113,6 +114,7 @@ function setupEventListeners() {
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
         });
     }
     
@@ -120,6 +122,15 @@ function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', handleSmoothScroll);
+        // Close mobile menu after clicking
+        link.addEventListener('click', () => {
+            if (navMenu) {
+                navMenu.classList.remove('active');
+            }
+            if (navToggle) {
+                navToggle.classList.remove('active');
+            }
+        });
     });
     
     // Track scroll depth for ad optimization
@@ -485,6 +496,27 @@ function handleSmoothScroll(e) {
             behavior: 'smooth'
         });
     }
+}
+
+// Back to top button behavior
+function initBackToTop() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    const toggleVisibility = () => {
+        if (window.scrollY > 400) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    toggleVisibility();
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 }
 
 // Utility functions
